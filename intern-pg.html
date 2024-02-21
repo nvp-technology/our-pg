@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/img/nvp/logo-nvp.png">
+
+    <title>NVP - Internship</title>
+    <style>
+        body {
+            font-family: 'Montserrat';
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            backdrop-filter: blur(24.450000762939453px);
+            transition: 0.5s;
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+            background-color: #665d5d00;
+        }
+
+        .navbar-brand img {
+            max-height: 5rem;
+        }
+
+        .nav-item {
+            margin: 10px;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .first-section {
+            background-image: url('./img/bg3.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            height: 100vh;
+        }
+
+        .first-section img {
+            margin-top: 4rem;
+            width: 30rem;
+        }
+
+        .first-section h1 {
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 4rem;
+        }
+
+        .first-section p {
+            font-size: 1.2rem;
+        }
+
+        .second-section {
+            background-color: white;
+            padding: 50px 0;
+        }
+
+        .internship-card {
+            border: 1px solid #ccc;
+            font-family: 'Montserrat';
+            color: white;
+            background-color: #262626;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            padding: 1rem;
+            transition: 0.4s;
+        }
+
+        .internship-card:hover {
+            background-color: #181818;
+        }
+
+        .internship-card h5 {
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .internship-card .btn {
+            background-color: #00045900;
+            border: 2px solid white;
+            border-radius: 5rem;
+            transition: 0.5s;
+        }
+
+        .internship-card .btn:hover {
+            transform: scale(1.1);
+        }
+
+        .internship-card .card-text {
+            color: #FB37FF;
+            font-weight: 600;
+        }
+
+        .internship-card li {
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+        .card-two {
+            height: 27rem;
+        }
+
+        .dont-have-skill-section {
+            padding: 50px 0;
+            background-color: #eaeaea;
+        }
+
+        .dont-have-skill-points {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dont-have-skill-points li {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .dont-have-skill-buttons {
+            display: flex;
+
+            margin-top: 20px;
+        }
+
+        .dont-have-skill-buttons a {
+            margin: 10px;
+        }
+
+        .image-and-points-section {
+            padding: 50px 0;
+        }
+
+        .image-and-points-section img {
+            width: 60%;
+        }
+
+        .image-and-points-row {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-and-points-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .image-and-points-image {
+            flex: 1;
+        }
+
+        .image-and-points-section li {
+            margin-top: 10px;
+        }
+
+        /* Footer Section */
+        .footer-section {
+            background-image: linear-gradient(to right, #000459, #4E007E, #323583);
+            padding: 20px 0;
+            color: white;
+        }
+
+        .footer-logo {
+            max-height: 40px;
+        }
+
+        .footer-quote {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .footer-nav {
+            text-align: center;
+        }
+
+        .footer-nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+
+        }
+
+        .footer-para {
+            text-align: left;
+        }
+
+
+
+        @media only screen and (max-width: 600px) {
+            .first-section img {
+                margin-top: 0;
+                width: 25rem;
+            }
+
+            .first-section h1 {
+                font-size: 2rem;
+            }
+
+            .first-section {
+                padding: 110px 0;
+            }
+
+            .content-land {
+                padding: 0%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/nvp/logo-nvp.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./courses-pg.html">Courses</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/intern-pg.html">Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Section -->
+    <section class="first-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Internship programme</h1>
+                    <p>We as a development and designing agency required some fresh mind who can help us by contributing
+                        and also they would be Appreciated by the letter & Also Stipend according to Work. <br><br>
+
+                        You Will Also be getting the industry Experience of working on a live project with team.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./img/undraw_done_re_oak4 (1).svg" alt="Right Section Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Section -->
+    <section class="second-section">
+        <div class="container">
+            <h2>Our Internship Programmes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="internship-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom <br> Internships</h5>
+                            <p class="card-text">Internship as you Want.</p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Whenever You Want to start Your Internship Period.
+                                    </li>
+                                    <li>
+                                        Get Your Offer Letter, Experience Certificate & Appreciation Certificate As per
+                                        performance
+                                    </li>
+                                    <li>
+                                        Guidence For Future.
+                                    </li>
+                                    <li>
+                                        Work On a Project.
+                                    </li>
+                                    <li>
+                                        Connect With The Industry Experts.
+                                    </li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="internship-card card-two">
+                        <div class="card-body">
+                            <h5 class="card-title">Free
+                                Internship</h5>
+                            <p class="card-text">Just Want to Gain the
+                                Experience.</p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Get Experience in your Chosen Field.
+                                    </li>
+                                    <li>
+                                        Grow Your professional Network.
+                                    </li>
+                                    <li>
+                                        Gain The experience From Anywhere.
+                                    </li>
+                                    <li>
+                                        Connect with the like-minded ones.
+                                    </li>
+                                    <li>
+                                        Enhance your Resume with the Experience Certificate.
+                                    </li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="internship-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Stipend BAsed
+                                Internship</h5>
+                            <p class="card-text">Wanted to Get paid of Work
+                                You are Working.</p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Get Paid of What you do.
+                                    </li>
+                                    <li>
+                                        Build Your Network With the team.
+                                    </li>
+                                    <li>
+                                        Be the part of a big project.
+                                    </li>
+                                    <li>
+                                        You will get Experience Letter.
+                                    </li>
+                                    <li>
+                                        Get the experience of working in a team.
+                                    </li>
+                                </ul>
+                            </p>
+                            <a href="#" class="btn btn-primary">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Don't have skill? Section -->
+    <section class="dont-have-skill-section">
+        <div class="container">
+            <h2>Don’t have skill?</h2>
+            <ul class="dont-have-skill-points">
+                <li>Join our courses to learn a skill and then you can directly get a internship.</li>
+                <li>even if you can’t join courses then don’t be sad we have resources for free.</li>
+        </div>
+    </section>
+
+    <!-- Image and Points Section -->
+    <!-- Image and Points Section -->
+    <section class="image-and-points-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./img/undraw_updated_resume_re_7r9j.svg" alt="Right Section Image" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="image-and-points-text">
+                        <h2>Why Internships Are Important</h2>
+                        <p>
+                            <ul>
+                                <li>
+                                    If you are Just a Beginner and don’t have any Experience so you can get some
+                                    experience working as a intern.
+                                </li>
+                                <li>
+                                    You will Get to know about how to work in Team.
+                                </li>
+                                <li>
+                                    It makes a difference in your Resume if you have worked on a live projects.
+                                </li>
+
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <section class="footer-section">
+        <section class="footer-section">
+            <div class="container">
+                <div class="d-flex justify-content-between row">
+                    <!-- Left Section -->
+                    <div class="col-md-4">
+                        <img src="./img/nvp/logo-nvp.png" alt="Footer Logo" class="footer-logo">
+                        <p class="footer-quote"><b> Best Wishes To You! </b> <br>
+                            We appreciate your trust !Here's to your success and a future filled with prosperity.
+                            Thank you for considering us.</p>
+                    </div>
+
+                    <!-- Center Section -->
+                    <div class="col-4 col-sm-1 footer-nav">
+                        <a href="./index.html">Home</a>
+                        <a href="./intern-pg.html">InternShip</a>
+                        <a href="./resources.html">Resources</a>
+                        <a href="./courses-pg.html">Courses</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="col3 col-sm-4 footer-para">
+                        <p>We Just Don’t Give Services to Customers But our aim is to also give Knowledge to upcoming
+                            ITians. <br> <br>
+
+                            <b> We Believe that if our future is guided Right so they can create big impact. </b>For
+                            that we have Resources Included on Our Site and Courses also.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Your other sections and scripts -->
+
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- Additional script for navbar transparency effect -->
+        <script>
+            // Change navbar background on scroll
+            window.onscroll = function () {
+                var scrollPos = window.scrollY;
+
+                if (scrollPos > 100) {
+                    document.querySelector('.navbar').style.backgroundColor = '#00000048';
+                } else {
+                    document.querySelector('.navbar').style.backgroundColor = '';
+                }
+            };
+        </script>
+
+</body>
+
+</html>
